@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "city": "New York",
+        "condition": "Heart Surgery",
+        "review": "I can't thank the cardiac team enough. Their expertise and compassion made my recovery smooth. Highly recommended!",
+        "img": "https://th.bing.com/th/id/R.22c7a54325acd1098875b79649e8824b?rik=EiTRypRtOBKghg&riu=http%3a%2f%2fwww.mappery.com%2favatars%2f361024.jpg&ehk=vgNcuEjjs%2bR4bmPEtlV1o%2f52KSHzjvpeWrlLHYU%2fy5c%3d&risl=&pid=ImgRaw&r=0",
+        "transformation": "After taking the Python course, I landed a job as a data analyst."
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "city": "Los Angeles",
+        "condition": "Broken Leg",
+        "review": "Dr. Patel and the nursing staff were exceptional. They ensured my comfort and guided me through rehab. Forever grateful!",
+        "img": "https://i.pinimg.com/originals/b3/c9/df/b3c9dfa78c7a93bbd84f9c8fcbcc2a0e.jpg",
+        "transformation": "The web development course helped me start my own freelance business."
+    },
+    {
+        "id": 3,
+        "name": "Rajesh Patel",
+        "city": "Mumbai",
+        "condition": "Broken Leg",
+        "review": "Dr. Patel and the nursing staff were exceptional. They ensured my comfort and guided me through rehab. Forever grateful!",
+        "img": "https://i.pinimg.com/originals/ee/49/56/ee49560df0dd49911faf3964c709c0bf.jpg",
+        "transformation": "As a finance professional, the Excel and financial modeling courses were game-changers. I now create complex financial models and analyze investment opportunities with confidence."
+    },
+    {
+        "id": 4,
+        "name": "Maria Gonzalez",
+        "city": "Barcelona",
+        "condition": "Appendectomy",
+        "review": "The surgical team at Sunrise Hospital was outstanding. Minimal pain, quick recovery. Kudos!",
+        "img": "https://c2.staticflickr.com/6/5289/5216270546_c63e5361cc_b.jpg",
+        "transformation": "Learning digital marketing boosted my career. I now manage successful social media campaigns and drive traffic to our e-commerce website."
+    },
+    {
+        "id": 5,
+        "name": "Ahmed Khalid",
+        "city": "Dubai",
+        "condition": "Childbirth",
+        "review": "The maternity ward staff made my delivery stress-free. Their care and support were beyond expectations.",
+        "img": "https://th.bing.com/th/id/OIP.p1MqE9q2kkGeYiKeeqv-JgHaHa?w=512&h=512&rs=1&pid=ImgDetMain",
+        "transformation": "The cybersecurity course enhanced my skills, and I now work as an ethical hacker, protecting organizations from cyber threats."
+    },
+    {
+        "id": 6,
+        "name": "Lena Petrova",
+        "city": "Moscow",
+        "condition": "COVID-19",
+        "review": "During my isolation, the nurses were like family. Their dedication saved lives. Thank you, St. Mary's!",
+        "img": "https://2.bp.blogspot.com/-KZGdn3ziUb0/VZxVuBu8CgI/AAAAAAAAQ6A/B3HsHrAI1iE/s1600/meet%2Bsingle%2Bwomen%2B%252814%2529.jpg",
+        "transformation": "The UX/UI design course opened doors for me. I now create user-friendly interfaces for mobile apps, improving user experiences."
+    },
+    {
+        "id": 7,
+        "name": "Carlos Fernandez",
+        "city": "Madrid",
+        "condition": "Hip Replacement",
+        "review": "Dr. Rodriguez transformed my mobility. The rehab team pushed me to regain strength. Forever indebted!",
+        "img": "https://i.pinimg.com/originals/e0/c6/8a/e0c68a3b92ef15e9dce8fd07498f5ac5.jpg",
+        "transformation": "The project management course elevated my career. I lead cross-functional teams and deliver successful projects on time and within budget."
+    },
+    {
+        "id": 8,
+        "name": "Emily Chen",
+        "city": "Shanghai",
+        "condition": "Stroke Recovery",
+        "review": "The neurology team's personalized care helped me regain speech and movement. Remarkable!",
+        "img": "https://th.bing.com/th/id/OIP.zLVzrX8L9osgS3oPwVfh5AAAAA?rs=1&pid=ImgDetMain",
+        "transformation": "The supply chain management course helped me optimize logistics processes. I now streamline operations for global companies."
+    },
+    {
+        "id": 9,
+        "name": "Ananya Rao",
+        "city": "Bangalore",
+        "condition": "Stroke Recovery",
+        "review": "The neurology team's personalized care helped me regain speech and movement. Remarkable!",
+        "img": "https://img.freepik.com/premium-photo/young-smart-indian-businesswoman-smiling-face-standing-blur-background-creative-colorful-office-interior-design-generative-ai-aig20_31965-142318.jpg",
+        "transformation": "The machine learning course empowered me to build predictive models. I now work in AI research, solving real-world problems."
+    },
+    {
+        "id": 10,
+        "name": "Lucas Silva",
+        "city": "São Paulo",
+        "condition": "Cancer Treatment",
+        "review": "Oncology staff at Hope Medical Center treated me with empathy. Their positivity kept me going.",
+        "img": "https://spiel-kind.com/wp-content/uploads/2020/12/000_4544xx-Kopie-667x1000.jpg",
+        "transformation": "The entrepreneurship course inspired me to launch my own tech startup. I now lead a team and innovate in the fintech industry."
+    }
+]

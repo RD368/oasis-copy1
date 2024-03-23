@@ -43,7 +43,7 @@
     <nav class="main-nav">
       <div class="logo">
         <a href="#">
-          <img src="" alt="logo-img" />
+          <img src="../static/logo.png" style="width: 10rem;" alt="logo-img" />
         </a>
       </div>
       <div class="search">
@@ -53,8 +53,13 @@
         <button class="search-btn">Search</button>
       </div>
       <div class="auth">
-        <a href="login" class="login-btn">Login</a>
-        <a class="registration-btn">Registration</a>
+        {% if not request.user.is_authenticated %}
+        <a href="auth/login" class="login-btn">Login</a>
+        <a href="auth/signup" class="registration-btn">Registration</a>
+        {% else %}
+        <a href="auth/profile" class="login-btn">Profile</a>
+        <a href="auth/logout" class="registration-btn">Logout</a>
+        {% endif %}
       </div>
 
       <!-- <input type="checkbox" id="check" />

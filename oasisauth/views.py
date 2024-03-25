@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from oasisauth.models import CustomUser
+from oasisauth.models import CustomUser,PatientRecord
 from django.contrib.auth import login,logout
 from django.contrib.auth.decorators import login_required
 
@@ -48,3 +48,12 @@ def login_view(request):
 def logout_view(request):
     logout(request)
     return redirect('/')
+
+def  patientDashboard(request):
+    if request.user.is_authenticated:
+        patient = PatientRecord.objects.get(patient=request.user)
+        context = {'patient': patient} 
+        return render(request,'oasisauth/patientDashboard.html',context)
+    else:
+        return redirect('login')
+    

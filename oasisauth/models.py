@@ -44,3 +44,24 @@ class CustomUser(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.email
+    
+
+class PatientRecord(models.Model):
+    patient = models.ForeignKey(CustomUser,on_delete=models.CASCADE)
+    dob = models.DateField(blank=True,null=True)
+    address = models.CharField(max_length=500, blank=True,null=True)
+    bloodGroup = models.CharField(max_length=30, blank=True,null=True)
+    height = models.FloatField(blank=True,null=True)
+    weight = models.FloatField(blank=True,null=True)
+    bmi = models.FloatField(blank=True,null=True)
+    pfp = models.FileField(upload_to= "pfp/", blank=True,null=True)
+    pdf_files = models.ManyToManyField('PdfFiles',related_name="patient_records",blank=True,null=True)
+
+    def __str__(self):
+        return f"Patient record for {self.patient}"
+    
+
+class PdfFiles(models.Model):
+    file = models.FileField(upload_to='pdf_files/')
+    uploadedAt = models.DateTimeField(auto_now_add=True)
+    

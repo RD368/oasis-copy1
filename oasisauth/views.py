@@ -55,5 +55,5 @@ def  patientDashboard(request):
         context = {'patient': patient} 
         return render(request,'oasisauth/patientDashboard.html',context)
     else:
-        return redirect('login')
+        return redirect('/auth/login')
     

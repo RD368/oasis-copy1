@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../static/pfpPage.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Patient Profile</title>
 </head>
@@ -12,7 +13,7 @@
 <body class="bg-[#E4EcF8]">
     <!-- Navbar -->
     <div class="w-full bg-white py-2 flex justify-between items-center h-16 shadow-md z-50">
-        <a href="/patients/profile/" class="text-3xl font-bold text-gray-700 hover:underline"><img class="w-[5rem]"
+        <a href="/" class="text-3xl font-bold text-gray-700 hover:underline"><img class="w-[5rem]"
                 src="../../static/logo.png" alt=""></a>
     </div>
 
@@ -20,7 +21,8 @@
         <a class="text-[#007c9D] text-[1.2rem]" href="/">Home / </a>
     </div>
     <div class="flex w-full justify-center">
-        <div class="flex w-[70rem] h-[70vh] justify-center">
+        <div class="flex w-[70rem] h-[70vh] justify-center relative">
+            <!-- <div class="w-8 absolute top-[-1rem] right-5 cursor-pointer"><img src="../../static/edit.png" alt=""></div> -->
             <div class="flex flex-col items-center mr-3 rounded-l-[1rem] justify-center w-[23rem] bg-white items-center">
                 <img class="rounded-full w-5/12"
                     src="{% if patient.pfp %}{{patient.pfp}}{% else%}https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_1280.png{% endif %}" />
@@ -74,14 +76,25 @@
         </div>
         <div class="w-[24rem] mr-5 h-[70vh] bg-white rounded-[1rem]">
             <h1 class="p-4 font-bold mb-4">Files / Documents</h1>
-            <ul class="">
-                {% if patient.pdf_files.none %}
-                {{patient.pdf_files}}
+            <ul class="p-4 overflow-scroll scrollbar_hide h-[59vh]">
+                {% if patient.pdf_files %}
+                {% for pdfFiles in patient.pdf_files.all %}
+                        
+                <li><a target="_blank" class="w-full shadow-lg px-3 rounded-lg flex h-[3rem] justify-between items-center" href="../../media/{{pdfFiles.file.name}}">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                        <path d="M4.603 14.087a.8.8 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.7 7.7 0 0 1 1.482-.645 20 20 0 0 0 1.062-2.227 7.3 7.3 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a11 11 0 0 0 .98 1.686 5.8 5.8 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.86.86 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.7 5.7 0 0 1-.911-.95 11.7 11.7 0 0 0-1.997.406 11.3 11.3 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.8.8 0 0 1-.58.029m1.379-1.901q-.25.115-.459.238c-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361q.016.032.026.044l.035-.012c.137-.056.355-.235.635-.572a8 8 0 0 0 .45-.606m1.64-1.33a13 13 0 0 1 1.01-.193 12 12 0 0 1-.51-.858 21 21 0 0 1-.5 1.05zm2.446.45q.226.245.435.41c.24.19.407.253.498.256a.1.1 0 0 0 .07-.015.3.3 0 0 0 .094-.125.44.44 0 0 0 .059-.2.1.1 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a4 4 0 0 0-.612-.053zM8.078 7.8a7 7 0 0 0 .2-.828q.046-.282.038-.465a.6.6 0 0 0-.032-.198.5.5 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822q.036.167.09.346z"/>
+                      </svg>
+                      <h1 class="w-[16rem]">{{pdfFiles.file.name}}</h1>
+                      <h1>123kb</h1>
+                </a></li>
+                {% endfor %}
                 {% else %}
                 <li class="p-5">
                     No files has added  yet!
                 </li>
                 {% endif %}
+                
             </ul>
         </div>
     </div>

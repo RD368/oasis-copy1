@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../static/doctor.css" />
+    <title>Find a Doctor</title>
+  </head>
+  <body>
+    <div class="w-full bg-white py-2 flex justify-between items-center h-16 shadow-md z-50">
+        <a href="/" class="text-3xl font-bold text-gray-700 hover:underline"><img class="w-5rem"
+                src="../../static/logo.png" alt=""></a>
+    </div>
+    <div class="d-flex flex-column align-items-center pt-4">
+      <div class="dr-list mb-6">
+        <div class="d-flex align-items-center">
+          <div
+            class="dr-rating d-flex flex-column align-self-normal align-items-center p-2 py-4 p-sm-3 border-end"
+          >
+            <figure class="mb-2">
+              <a
+                class="cursor-pointer"
+                title="Dr Swati Upadhayay, General Surgeon"
+                ><img
+                  width="84"
+                  class="rounded-circle"
+                  alt="General Surgeon in Ahmedabad"
+                  src="https://cdn.askapollo.com/live/images/doctors/general-surgery/dr-swati-upadhayay-general-surgery-in-ahmedabad.png"
+                  id="doctorlist_img_3726"
+              /></a>
+            </figure>
+          </div>
+          <div class="d-lg-flex pb-4 pb-lg-0 equal-columns">
+            <div
+              class="dr-dscpn pt-4 pb-3 px-3 px-md-4 px-lg-4 px-xl-4 pb-lg-4"
+            >
+              <h3 class="cursor-pointer">Dr Swati Upadhayay</h3>
+              <div class="spec-group">
+                <p>
+                  General Surgery, Transplant Surgery<span class="mx-2">|</span>
+                  27 years exp
+                  <!----><!---->
+                </p>
+              </div>
+              <hr />
+              <address class="fst-normal d-flex align-items-start">
+                <img
+                  src="./assets/images/dr-location.svg"
+                  alt=""
+                  width="12"
+                  class="me-2 align-self-start"
+                /><span> Apollo Hospitals International Limited Ahmedabad</span>
+              </address>
+              <!----><!----><!----><!---->
+              <div class="language d-flex align-items-center pb-3">
+                <img
+                  src="./assets/images/language.svg"
+                  alt=""
+                  width="16"
+                  class="me-1"
+                /><span>English</span>
+              </div>
+              <div class="language d-flex align-items-center">
+                <img
+                  src="./assets/images/qualification.svg"
+                  alt=""
+                  width="16"
+                  class="me-1"
+                /><span class="data_info">MBBS, MS, FICS(GEN.SURGERY)</span>
+              </div>
+              <!---->
+            </div>
+            <div
+              class="next-available d-lg-flex flex-lg-column justify-content-lg-center text-lg-center px-3 px-md-4 p-lg-4"
+            >
+              <p class="mb-2">
+                <strong class="d-lg-block ms-2 ms-lg-0"
+                  ><span
+                    ><span
+                      aria-hidden="true"
+                      class="icon-clock pull-left"
+                    ></span>
+                    <div class="mLeft20">
+                      MON- SAT, MON- SAT
+                      <p class="text-info margin0">(11:00 AM-04:00 PM)</p>
+                    </div></span
+                  ><!----></strong
+                >
+              </p>
+              <!----><a
+                href="javascript:void(0)"
+                id="book_appointment_feature_doctor_search_bookappointment"
+                class="btn btn-primary text-uppercase"
+                >book appointment</a
+              ><!----><!----><!---->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

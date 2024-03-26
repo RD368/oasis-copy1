@@ -23,5 +23,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',views.home,name="Home"),
+    path('bookAppointment',views.bookAppointment,name="BookAppointment"),
+    path('findDoctor',include('oasisdoctor.urls')),
     path('auth',include('oasisauth.urls')),
 ]+ static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)
